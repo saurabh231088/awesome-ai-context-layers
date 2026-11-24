@@ -31,5 +31,49 @@ _Last reviewed: November 2026. Check vendor release notes for current status._
 ## Comparisons and guides
 - [Genie Ontology vs Palantir Ontology: what's the difference?](https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2) — docs-linked comparison with notes on the platforms above (updated Nov 23, 2026). _Maintainer's own guide._
 
+- # Databricks Genie Ontology — 30 How-To Quick Reference
+
+[Full guide](https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2) | Updated Nov 25, 2026
+
+## MCP & integrations https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2
+- **Expose to ChatGPT/Claude via MCP** → EXECUTE on system.ai.genie_one_mcp + ai-gateway scope
+- **Connect MCP to Genie Agents** → Sources tab → Add → MCP Services (Beta)
+- **MCP permission enforcement** → per-user auth; write tools need approval
+
+## Domains & governance https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2
+- **Structure domains** → one top-level per business area, up to 5 levels
+- **Permission boundaries** → UC grants per team; external knowledge sources visible to all (Beta)
+- **Create Pages** → Discover → Pages → Create; attach to one domain
+- **Bulk import Pages** → Genie Code "Bulk import" starter; creates drafts
+- **Stewardship workflow** → consumers draft, managers publish, curators certify
+
+## Metrics & validation https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2
+- **Validate Genie uses your metrics** → check snippet source under each response
+- **Test against ground truth** → benchmark SQL in Chat mode; Good = match within 4 sig digits
+- **Evaluate inferred context** → inspect authority scores and source citations
+- **How Genie infers metrics** → extracts snippets from queries, dashboards, metric views
+- **Help Genie discover metrics** → define metric views, organize domains, write Pages
+- **Override inferred metrics** → define as metric view or Page; modeled wins
+- **Inferred as starting point** → treat snippets as drafts, formalize as modeled
+- **Compare inferred vs certified** → view snippets alongside metric views
+- **Correct wrong inferences** → fix source asset or publish authoritative metric view
+- **Resolve team conflicts** → separate domains, certify the winner
+- **Configure Agent metrics** → add up to 50 tables/views/metric views
+- **Define semantic objects** → CREATE VIEW WITH METRICS using MEASURE()
+
+## Metric views & dashboards https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2
+- **Metrics for Agents + dashboards** → one metric view, shared everywhere
+- **Metric views in dashboards** → same view in both; MEASURE() auto-applied
+- **Agent as dashboard source of truth** → back both with certified metric views
+- **Lineage tracking** → UC lineage + Genie provenance citations
+- **Temporal patterns** → fiscal calendars and time-window rules in metric views
+
+## Migration & discovery https://medium.com/@saurabhanilagrawal/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2
+- **Snowflake → metric views** → logical tables → source; dimensions → fields; metrics → measures
+- **Snowflake layering** → metric view composability with MEASURE()
+- **Genie One search** → Discover page + chat; domain filter includes subdomains
+- **External knowledge sources** → Beta for BI models; Preview for volumes
+- **Data product strategy** → domain-aligned certified metric views + dedicated Agents
+
 ## Contributing
 Add a platform with a one-line description and a link to official docs. Mark preview features as preview.
