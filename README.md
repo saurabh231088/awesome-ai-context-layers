@@ -1,5 +1,24 @@
 # Awesome AI Context Layers
 
+# Databricks Genie Ontology — Architecture Guide
+
+A practitioner's comparison of how 10 platforms approach giving AI systems
+business context: Palantir Foundry Ontology, Databricks Genie Ontology,
+Stardog, Neo4j, Glean Context Graph, Tableau Semantics, Snowflake Semantic
+Views, AWS Context, and Microsoft Foundry IQ.
+
+## Read the full comparison
+
+[Genie Ontology vs Palantir Ontology — What's the Difference?](https://saurabhanilagrawal.medium.com/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2)
+
+Updated November 26, 2026. Product details checked against each vendor's
+public documentation.
+
+## About
+
+Written by Saurabh Agrawal, a Delivery Solutions Architect with 15+ years
+in data platforms.
+
 A curated list of platforms and official documentation for giving AI agents business context: definitions, metrics, relationships and rules. Links point to vendor docs where possible. Pull requests welcome.
 
 _Last reviewed: November 2026. Check vendor release notes for current status._
