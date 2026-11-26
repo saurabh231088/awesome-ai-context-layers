@@ -48,7 +48,7 @@ _Last reviewed: November 2026. Check vendor release notes for current status._
 - **Genie One MCP** — expose Databricks business context to external AI agents. [Docs](https://docs.databricks.com/aws/en/agents/mcp-tools/genie-mcp)
 
 ## Comparisons and guides
-- [Genie Ontology vs Palantir Ontology: what's the difference?](https://saurabhanilagrawal.medium.com/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2) — docs-linked comparison with notes on the platforms above (updated Nov 25, 2026). _Maintainer's own guide._
+- [Genie Ontology vs Palantir Ontology: what's the difference?](https://saurabhanilagrawal.medium.com/genie-ontology-vs-palantir-ontology-whats-the-difference-e64f06746ad2) — docs-linked comparison with notes on the platforms above (updated Nov 26, 2026). _Maintainer's own guide._
 
 ## Contributing
 Add a platform with a one-line description and a link to official docs. Mark preview features as preview.
